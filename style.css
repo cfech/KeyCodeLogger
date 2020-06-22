@@ -1,0 +1,40 @@
+.container{
+    border:2px solid black;
+    margin: auto;
+    text-align: center;
+    width: 80%;
+    height: 100%;
+    overflow: hidden;
+    background-color: white;
+}
+.background{
+    background-color: grey;
+    overflow: hidden;
+    height: 100vh;
+}
+
+#key, #keyCode{
+    font-size: 50px;
+}
+
+#keySpan, #keyCodeSpan{
+    font-size: 75px;
+}
+
+#history{
+height: 30%;
+overflow-y: auto;
+border: 2px solid black;
+width: 80%;
+margin: auto;
+}
+
+.listStyle{
+    list-style: none;
+    margin-left: -50px;
+    
+}
+
+.listItemStyle{
+    border-bottom: 1px solid black;
+}
