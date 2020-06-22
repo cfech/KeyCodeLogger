@@ -22,7 +22,7 @@
 }
 
 #history{
-height: 30%;
+height: 50%;
 overflow-y: auto;
 border: 2px solid black;
 width: 80%;
@@ -37,4 +37,5 @@ margin: auto;
 
 .listItemStyle{
     border-bottom: 1px solid black;
+    font-size: 30px;
 }

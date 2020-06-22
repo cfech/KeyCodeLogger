@@ -24,7 +24,7 @@ function whatKey(e) {
         k = "Space"
     }
 
-// setting the html text content
+    // setting the html text content
     keyDiv.textContent = k
     keyCodeDiv.textContent = kc
 
@@ -58,11 +58,11 @@ const setHistory = (array) => {
 
         let key2 = JSON.stringify(array[i].key)
         let keyCode2 = JSON.stringify(array[i].keyC)
-        
+
         listItem.textContent = `KEY: ${key2}, KEYCODE: ${keyCode2}`
         list.prepend(listItem)
     }
 
-// appending our list to the history div
+    // appending our list to the history div
     historyDiv.append(list)
 }
