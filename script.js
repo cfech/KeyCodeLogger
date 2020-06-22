@@ -52,6 +52,7 @@ const setHistory = (array) => {
 
     //looping through our array of objects and setting the text content of previously clicked keys 
     for (let i = 0; i < array.length; i++) {
+     
 
         let listItem = document.createElement("li")
         listItem.classList.add("listItemStyle")
@@ -59,7 +60,7 @@ const setHistory = (array) => {
         let key2 = JSON.stringify(array[i].key)
         let keyCode2 = JSON.stringify(array[i].keyC)
 
-        listItem.textContent = `KEY: ${key2}, KEYCODE: ${keyCode2}`
+        listItem.textContent = `KEY: ${key2},  KEYCODE: ${keyCode2}`
         list.prepend(listItem)
     }
 

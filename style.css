@@ -1,5 +1,5 @@
-.container{
-    border:2px solid black;
+.container {
+    border: 2px solid black;
     margin: auto;
     text-align: center;
     width: 80%;
@@ -7,35 +7,51 @@
     overflow: hidden;
     background-color: white;
 }
-.background{
+
+.background {
     background-color: grey;
     overflow: hidden;
     height: 100vh;
 }
 
-#key, #keyCode{
+#key, #keyCode {
     font-size: 50px;
 }
 
-#keySpan, #keyCodeSpan{
+#keySpan, #keyCodeSpan {
     font-size: 75px;
 }
 
-#history{
-height: 50%;
-overflow-y: auto;
-border: 2px solid black;
-width: 80%;
-margin: auto;
+#history {
+    height: 50%;
+    overflow-y: auto;
+    border: 2px solid black;
+    width: 80%;
+    margin: auto;
 }
 
-.listStyle{
+.listStyle {
     list-style: none;
     margin-left: -50px;
-    
 }
 
-.listItemStyle{
+.listItemStyle {
     border-bottom: 1px solid black;
     font-size: 30px;
+}
+
+#hTitle {
+    font-size: 40px;
+    margin-bottom: 0px;
+}
+
+@media only screen and (max-width: 600px) {
+    #history {
+        height: 35%;
+    }
+
+    .listItemStyle{
+      
+        font-size: 20px;
+    }
 }
