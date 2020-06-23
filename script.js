@@ -5,6 +5,7 @@ document.addEventListener("keyup", whatKey)
 var keyDiv = document.getElementById("keySpan")
 var keyCodeDiv = document.getElementById("keyCodeSpan")
 var historyDiv = document.getElementById("history")
+var clearHistory = document.getElementById("clrBtN")
 
 //previous key clicked array 
 var previousKC = []
@@ -67,3 +68,13 @@ const setHistory = (array) => {
     // appending our list to the history div
     historyDiv.append(list)
 }
+
+//clearing history
+clearHistory.addEventListener("click", ()=>{
+    previousKC = []
+    console.log("previousKC", previousKC)
+    setHistory(previousKC)
+    keyDiv.textContent = ""
+    keyCodeDiv.textContent = ""
+    
+})
