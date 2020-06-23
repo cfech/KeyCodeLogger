@@ -13,13 +13,13 @@ var previousKC = []
 
 // function to get the key code for key clicked 
 function whatKey(e) {
-    console.log(e.keyCode)
-    console.log(e)
-    console.log(e.key)
+    // console.log(e.keyCode)
+    // console.log(e)
+    // console.log(e.key)
 
     var kc = e.keyCode
     var k = e.key
-    console.log("whatKey -> k", k)
+    // console.log("whatKey -> k", k)
     
 
     //validation for spaces
@@ -36,9 +36,11 @@ function whatKey(e) {
         key: k,
         keyC: kc
     }
+    console.log(keyCombo)
 
     // pushing the keyCombo to the array for further use
     previousKC.push(keyCombo)
+    console.log(previousKC)
 
     // calling the set history function
     setHistory(previousKC)
