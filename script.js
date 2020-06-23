@@ -19,6 +19,8 @@ function whatKey(e) {
 
     var kc = e.keyCode
     var k = e.key
+    console.log("whatKey -> k", k)
+    
 
     //validation for spaces
     if (e.key === " ") {
