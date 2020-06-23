@@ -40,6 +40,8 @@ function whatKey(e) {
 
     // calling the set history function
     setHistory(previousKC)
+
+    setLocal(previousKC)
 }
 
 
@@ -53,7 +55,7 @@ const setHistory = (array) => {
 
     //looping through our array of objects and setting the text content of previously clicked keys 
     for (let i = 0; i < array.length; i++) {
-     
+
 
         let listItem = document.createElement("li")
         listItem.classList.add("listItemStyle")
@@ -70,11 +72,30 @@ const setHistory = (array) => {
 }
 
 //clearing history
-clearHistory.addEventListener("click", ()=>{
+clearHistory.addEventListener("click", () => {
     previousKC = []
     console.log("previousKC", previousKC)
     setHistory(previousKC)
     keyDiv.textContent = ""
     keyCodeDiv.textContent = ""
-    
+
 })
+
+//setting to local storage 
+
+const setLocal = (array) => {
+    localStorage.setItem("previousKeys", JSON.stringify(array))
+    console.log("saved to local storage")
+}
+
+//getting local storage
+
+const getLocal = () =>{
+    var arr = JSON.parse(localStorage.getItem("previousKeys"))
+    console.log("getLocal -> arr", arr)
+    previousKC = arr
+    console.log("getLocal -> previousKC", previousKC)
+    setHistory(previousKC)
+}
+
+getLocal()
