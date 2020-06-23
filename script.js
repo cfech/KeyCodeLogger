@@ -97,9 +97,10 @@ const setLocal = (array) => {
 const getLocal = () =>{
     var arr = JSON.parse(localStorage.getItem("previousKeys"))
     console.log("getLocal -> arr", arr)
-    previousKC = arr
+   
     console.log("getLocal -> previousKC", previousKC)
-    setHistory(previousKC)
+    setHistory(arr)
 }
 
-// getLocal()
+getLocal()
+console.log("updated")
