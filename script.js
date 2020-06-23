@@ -45,7 +45,7 @@ function whatKey(e) {
     // calling the set history function
     setHistory(previousKC)
 
-    // setLocal(previousKC)
+    setLocal(previousKC)
 }
 
 
