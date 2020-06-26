@@ -9,9 +9,10 @@
     font-family: 'Sriracha', cursive;
 }
 
-body{
+body {
     background-color: #002868;
 }
+
 .background {
     background-color: #002868;
     overflow: hidden;
@@ -22,7 +23,7 @@ body{
     font-size: 40px;
     /* font-family: 'Piedra', cursive;
      */
-     font-family: 'Sriracha', cursive;
+    font-family: 'Sriracha', cursive;
 }
 
 #keySpan, #keyCodeSpan {
@@ -56,23 +57,31 @@ body{
     #history {
         height: 35%;
     }
-
-    .listItemStyle{
-      
+    .listItemStyle {
         font-size: 20px;
     }
 }
 
-#clrBtN{
-   /* flex: auto; */
-   height: 30px;
-   margin-top: 78px;
-   width: 15%;
-   margin-left: 10px;
+#clrBtN {
+    /* flex: auto; */
+    height: 30px;
+    margin-top: 78px;
+    width: 15%;
+    margin-left: 10px;
+    background-color: gray;
+    color: white;
 }
 
-.historyDiv{
-    display:flex;
+#clrBtN:hover {
+transition: background-color 1000ms;
+transition: color 500ms;
+background-color: white;
+color: black;
+
+}
+
+.historyDiv {
+    display: flex;
     /* text-align: center; */
     flex-wrap: wrap;
     justify-content: center;
